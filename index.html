@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learning CSS</title>
+    <style>
+        p {
+            color: darksalmon;
+        }
+        div p {
+            color: black;
+            font-size: 22px; 
+        }
+    </style>
 </head>
 <body>
     <!--these are inline styles --> 
@@ -18,5 +27,19 @@
     border-bottom-color: salmon;
     border-right-color: aliceblue; 
     border-style: dotted;">Gaudy Border</h1>
+    <!-- internal styles.--> 
+    <!--these are still page by page specific, but a little easier to maintain.--> 
+    <!-- These are also easier to extract later.--> 
+    <p>I love cheese!</p>
+    <div> 
+        <p>I also love more cheese.</p>
+    </div>
+    <ul> 
+        <li>Cheddar</li>
+        <li>Harvarti</li>
+        <li>Chevre</li>
+        <li>Pepper Jack</li>
+        <li>Swiss</li>
+    </ul>
 </body>
 </html>
