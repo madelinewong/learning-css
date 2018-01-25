@@ -53,8 +53,8 @@ img.avatar {
 
 .container {
     padding: 16px;
-    margin-left: 80px;
-    margin-right:80px;
+    margin-left: 400px;
+    margin-right:400px;
 }
 
 span.psw {
@@ -76,15 +76,22 @@ span.psw {
 h2 {
     margin-left:600px;
 }
+
+input {
+    margin-left: 400px;
+}
+.submit {
+margin-left: 50px;
+}
+
 </style>
 </head>
 <body>
 
 <h2>Login Form</h2>
-
 <form action="/action_page.php">
   <div class="imgcontainer">
-    <img src="images/snailandbubble.jpg" alt="snails" class="avatar"/>
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
@@ -105,6 +112,11 @@ h2 {
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
-
+<p>
+<form action="# onsumbit="if(document.getElementById('agree').checked) {return true;} else {alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+        <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy.
+        <input type="submit" name="submit" value="submit"/> 
+    </form>
+    </p>
 </body>
 </html>
